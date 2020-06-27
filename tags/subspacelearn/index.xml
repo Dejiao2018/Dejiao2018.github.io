@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SubspaceLearn on Dejiao Zhang</title>
+    <link>https://dejiaozhang.com/tags/subspacelearn/</link>
+    <description>Recent content in SubspaceLearn on Dejiao Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy;</copyright>
+    <lastBuildDate>Tue, 09 Oct 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://dejiaozhang.com/tags/subspacelearn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation from Undersampled Data</title>
+      <link>https://dejiaozhang.com/publication/grouse/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/grouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online estimation of coherent subspaces with adaptive sampling</title>
+      <link>https://dejiaozhang.com/publication/adagrouse/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/adagrouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhanced Online Subspace Estimation via Adaptive Sensing</title>
+      <link>https://dejiaozhang.com/publication/adagrouse_c/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/adagrouse_c/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+    <item>
+      <title>Matched Subspace Detection Using Compressively Sampled Data</title>
+      <link>https://dejiaozhang.com/publication/match/</link>
+      <pubDate>Sat, 25 Mar 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/match/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation</title>
+      <link>https://dejiaozhang.com/publication/grouse_aistats/</link>
+      <pubDate>Mon, 09 May 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/grouse_aistats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iterative Grassmannian Optimization for Robust Image Alignment</title>
+      <link>https://dejiaozhang.com/publication/tgrasta_journal/</link>
+      <pubDate>Sun, 02 Mar 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/tgrasta_journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iterative Online Subspace Learning for Robust Image Alignment</title>
+      <link>https://dejiaozhang.com/publication/tgrasta/</link>
+      <pubDate>Thu, 09 May 2013 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/tgrasta/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+  </channel>
+</rss>

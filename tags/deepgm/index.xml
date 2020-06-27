@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DeepGM on Dejiao Zhang</title>
+    <link>https://dejiaozhang.com/tags/deepgm/</link>
+    <description>Recent content in DeepGM on Dejiao Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy;</copyright>
+    <lastBuildDate>Wed, 05 Dec 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://dejiaozhang.com/tags/deepgm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Information Maximization Auto-Encoding</title>
+      <link>https://dejiaozhang.com/publication/imae/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/imae/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Dejiao Zhang</title>
+    <link>https://dejiaozhang.com/publication_types/1/</link>
+    <description>Recent content in 1 on Dejiao Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy;</copyright>
+    <lastBuildDate>Wed, 05 Dec 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://dejiaozhang.com/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Information Maximization Auto-Encoding</title>
+      <link>https://dejiaozhang.com/publication/imae/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/imae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Information Regularized Neural Networks</title>
+      <link>https://dejiaozhang.com/publication/irnn/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/irnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to Share: Simultaneous Parameter Tying and Sparsification in Deep Learning</title>
+      <link>https://dejiaozhang.com/publication/growl/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/growl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online estimation of coherent subspaces with adaptive sampling</title>
+      <link>https://dejiaozhang.com/publication/adagrouse/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/adagrouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simultaneous sparsity and parameter tying for deep learning using ordered weighted L1 regularization</title>
+      <link>https://dejiaozhang.com/publication/owl/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/owl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhanced Online Subspace Estimation via Adaptive Sensing</title>
+      <link>https://dejiaozhang.com/publication/adagrouse_c/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/adagrouse_c/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+    <item>
+      <title>Matched Subspace Detection Using Compressively Sampled Data</title>
+      <link>https://dejiaozhang.com/publication/match/</link>
+      <pubDate>Sat, 25 Mar 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/match/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation</title>
+      <link>https://dejiaozhang.com/publication/grouse_aistats/</link>
+      <pubDate>Mon, 09 May 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/grouse_aistats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iterative Online Subspace Learning for Robust Image Alignment</title>
+      <link>https://dejiaozhang.com/publication/tgrasta/</link>
+      <pubDate>Thu, 09 May 2013 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/tgrasta/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+  </channel>
+</rss>
