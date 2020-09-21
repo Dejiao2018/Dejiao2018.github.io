@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="We propose the Information Maximization Autoencoder (IMAE), an information theoretic approach to simultaneously learn continuous and discrete representations in an unsupervised setting. Unlike the Variational Autoencoder framework, IMAE starts from a stochastic encoder that seeks to map each input data to a hybrid discrete and continuous representation with the objective of maximizing the mutual information between the data and their representations. A decoder is included to reconstruct the data given their representations, where a high fidelity reconstruction can be achieved by leveraging the informative representations. We show that the proposed objective is theoretically valid and provides a principled framework for understanding the tradeoffs regarding informativeness of each representation factor, disentanglement of representations, and decoding quality.">
+  <meta name="description" content="Unsupervised domain adaptation addresses the problem of leveraging labeled data in a source domain to learn a well-performing model in a target domain where labels are unavailable. In this paper, we follow recent theoretical work and adopt the Margin Disparity Discrepancy (MDD) unsupervised domain adaptation algorithm to solve the cross-lingual text labeling problems. Experiments on cross-lingual document classification and NER demonstrate the proposed domain adaptation approach achieves significant improvements over state-of-the-art results. We further improve MDD by efficiently optimizing the margin loss on the source domain via Virtual Adversarial Training (VAT). This bridges the gap between the theoretical results and the actually used loss function in the original MDD work, and hence boosting the performance remarkably. Our numerical results also indicate that VAT can generally improve the generalization performance of both domains for different domain adaptation approaches.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/imae/">
+  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/mdd/">
 
   
 
@@ -105,32 +105,33 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://dejiaozhang.com/publication/imae/">
+  <link rel="canonical" href="https://dejiaozhang.com/publication/mdd/">
 
   
   
   
   
     
+    
   
-  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Dejiao Zhang">
-  <meta property="og:url" content="https://dejiaozhang.com/publication/imae/">
-  <meta property="og:title" content="Information Maximization Auto-Encoding | Dejiao Zhang">
-  <meta property="og:description" content="We propose the Information Maximization Autoencoder (IMAE), an information theoretic approach to simultaneously learn continuous and discrete representations in an unsupervised setting. Unlike the Variational Autoencoder framework, IMAE starts from a stochastic encoder that seeks to map each input data to a hybrid discrete and continuous representation with the objective of maximizing the mutual information between the data and their representations. A decoder is included to reconstruct the data given their representations, where a high fidelity reconstruction can be achieved by leveraging the informative representations. We show that the proposed objective is theoretically valid and provides a principled framework for understanding the tradeoffs regarding informativeness of each representation factor, disentanglement of representations, and decoding quality."><meta property="og:image" content="https://dejiaozhang.com/publication/imae/featured.jpg">
+  <meta property="og:url" content="https://dejiaozhang.com/publication/mdd/">
+  <meta property="og:title" content="Unsupervised Domain Adaptation for Cross-lingual Text Labeling | Dejiao Zhang">
+  <meta property="og:description" content="Unsupervised domain adaptation addresses the problem of leveraging labeled data in a source domain to learn a well-performing model in a target domain where labels are unavailable. In this paper, we follow recent theoretical work and adopt the Margin Disparity Discrepancy (MDD) unsupervised domain adaptation algorithm to solve the cross-lingual text labeling problems. Experiments on cross-lingual document classification and NER demonstrate the proposed domain adaptation approach achieves significant improvements over state-of-the-art results. We further improve MDD by efficiently optimizing the margin loss on the source domain via Virtual Adversarial Training (VAT). This bridges the gap between the theoretical results and the actually used loss function in the original MDD work, and hence boosting the performance remarkably. Our numerical results also indicate that VAT can generally improve the generalization performance of both domains for different domain adaptation approaches."><meta property="og:image" content="https://dejiaozhang.com/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-12-05T00:00:00-05:00">
+  <meta property="article:published_time" content="2020-06-30T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2020-06-27T17:08:30-04:00">
-  
-
+  <meta property="article:modified_time" content="2020-09-20T21:57:00-04:00">
   
 
   
 
-  <title>Information Maximization Auto-Encoding | Dejiao Zhang</title>
+  
+
+  <title>Unsupervised Domain Adaptation for Cross-lingual Text Labeling | Dejiao Zhang</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -304,27 +305,23 @@
 
 
 
+  
 
-<div class="article-header d-xl-none">
-  <div class="featured-image" style="background-image: url('/publication/imae/featured_hu21fde02c56d2d8d760d5017c0efd6f25_970445_800x0_resize_q75_box.jpg');"></div>
-  <span class="article-header-caption">IMAE</span>
-</div>
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Unsupervised Domain Adaptation for Cross-lingual Text Labeling</h1>
 
+  
 
-<div class="container-fluid split-header d-none d-xl-block">
-  <div class="row">
-    <div class="col-6">
-      <div class="split-header-content">
-        <h1 itemprop="name">Information Maximization Auto-Encoding</h1>
-
-        
-
-        
+  
+    
 
 
 
-<meta content="2018-12-05 00:00:00 -0500 EST" itemprop="datePublished">
-<meta content="2020-06-27 17:08:30 -0400 EDT" itemprop="dateModified">
+<meta content="2020-06-30 00:00:00 -0400 EDT" itemprop="datePublished">
+<meta content="2020-09-20 21:57:00 -0400 EDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -337,7 +334,7 @@
     
       
     
-    <time>December 2018</time>
+    <time>June 2020</time>
   </span>
   
 
@@ -351,11 +348,52 @@
   
 
   
-
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Unsupervised%20Domain%20Adaptation%20for%20Cross-lingual%20Text%20Labeling&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fmdd%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fmdd%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fmdd%2f&amp;title=Unsupervised%20Domain%20Adaptation%20for%20Cross-lingual%20Text%20Labeling"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fmdd%2f&amp;title=Unsupervised%20Domain%20Adaptation%20for%20Cross-lingual%20Text%20Labeling"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Unsupervised%20Domain%20Adaptation%20for%20Cross-lingual%20Text%20Labeling&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fmdd%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
 
-        
+  
+
+</div>
+
+    
 
 
 
@@ -385,42 +423,36 @@
 
 
   
-    
-  
 
-
-<a class="btn btn-outline-primary my-1 mr-1" href="http://bayesiandeeplearning.org/2018/papers/107.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/imae/cite.bib">
+        data-filename="/publication/mdd/cite.bib">
   Cite
 </button>
 
 
+
+
+
+  
+    
+  
+
+
+
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/Dejiao2018/IMAE_Joint" target="_blank" rel="noopener">
-  Code
+<a class="btn btn-outline-primary my-1 mr-1" href="/poster_iclr.pdf" target="_blank" rel="noopener">
+  Poster
 </a>
 
 
 
 
-  
-    
-  
-
-
-
-
-
-
 
 
 
@@ -429,215 +461,7 @@
 </div>
 
 
-
-        
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Information%20Maximization%20Auto-Encoding&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f"
-         target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f"
-         target="_blank" rel="noopener">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-    <li>
-      <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f&amp;title=Information%20Maximization%20Auto-Encoding"
-         target="_blank" rel="noopener">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f&amp;title=Information%20Maximization%20Auto-Encoding"
-         target="_blank" rel="noopener">
-        <i class="fab fa-weibo"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=Information%20Maximization%20Auto-Encoding&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="split-header-image">
-        <img src="/publication/imae/featured_hu21fde02c56d2d8d760d5017c0efd6f25_970445_680x500_fill_q90_box_center.jpg" itemprop="image" alt="">
-        <span class="article-header-caption">IMAE</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="article-container d-xl-none">
-  <h1 itemprop="name">Information Maximization Auto-Encoding</h1>
-
   
-
-  
-
-
-
-<meta content="2018-12-05 00:00:00 -0500 EST" itemprop="datePublished">
-<meta content="2020-06-27 17:08:30 -0400 EDT" itemprop="dateModified">
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    <time>December 2018</time>
-  </span>
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-    
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Information%20Maximization%20Auto-Encoding&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f"
-         target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f"
-         target="_blank" rel="noopener">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-    <li>
-      <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f&amp;title=Information%20Maximization%20Auto-Encoding"
-         target="_blank" rel="noopener">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f&amp;title=Information%20Maximization%20Auto-Encoding"
-         target="_blank" rel="noopener">
-        <i class="fab fa-weibo"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=Information%20Maximization%20Auto-Encoding&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fimae%2f">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-  
-
-</div>
-
-  
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="http://bayesiandeeplearning.org/2018/papers/107.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/imae/cite.bib">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/Dejiao2018/IMAE_Joint" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-  
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
 </div>
 
 
@@ -646,7 +470,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">We propose the Information Maximization Autoencoder (IMAE), an information theoretic approach to simultaneously learn continuous and discrete representations in an unsupervised setting. Unlike the Variational Autoencoder framework, IMAE starts from a stochastic encoder that seeks to map each input data to a hybrid discrete and continuous representation with the objective of maximizing the mutual information between the data and their representations. A decoder is included to reconstruct the data given their representations, where a high fidelity reconstruction can be achieved by leveraging the informative representations. We show that the proposed objective is theoretically valid and provides a principled framework for understanding the tradeoffs regarding informativeness of each representation factor, disentanglement of representations, and decoding quality.</p>
+    <p class="pub-abstract" itemprop="text">Unsupervised domain adaptation addresses the problem of leveraging labeled data in a source domain to learn a well-performing model in a target domain where labels are unavailable. In this paper, we follow recent theoretical work and adopt the Margin Disparity Discrepancy (MDD) unsupervised domain adaptation algorithm to solve the cross-lingual text labeling problems. Experiments on cross-lingual document classification and NER demonstrate the proposed domain adaptation approach achieves significant improvements over state-of-the-art results. We further improve MDD by efficiently optimizing the margin loss on the source domain via Virtual Adversarial Training (VAT). This bridges the gap between the theoretical results and the actually used loss function in the original MDD work, and hence boosting the performance remarkably. Our numerical results also indicate that VAT can generally improve the generalization performance of both domains for different domain adaptation approaches.</p>
     
 
     
@@ -678,7 +502,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Workshop on Bayesian Deep Learning, NeurIPS 2018</div>
+          <div class="col-12 col-md-9">Accepted by Findings of EMNLP 2020</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -691,15 +515,6 @@
     <div class="article-style"></div>
 
     
-
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tags/deepgm/">DeepGM</a>
-  
-</div>
-
-
 
     
 
@@ -842,6 +657,9 @@
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -859,6 +677,8 @@
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 
