@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>Unsupervised Domain Adaptation for Cross-lingual Text Labeling</title>
-      <link>https://dejiaozhang.com/publication/mdd/</link>
-      <pubDate>Tue, 30 Jun 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://dejiaozhang.com/publication/mdd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Information Maximization Auto-Encoding</title>
       <link>https://dejiaozhang.com/publication/imae/</link>
       <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
@@ -54,6 +45,15 @@
       <pubDate>Mon, 30 Apr 2018 00:00:00 -0400</pubDate>
       
       <guid>https://dejiaozhang.com/publication/growl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to Share: Simultaneous Parameter Tying and Sparsification in Deep Learning</title>
+      <link>https://dejiaozhang.com/publication/mdd/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/mdd/</guid>
       <description></description>
     </item>
     
