@@ -1,0 +1,7 @@
+host hugo academic on github:
+
+https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+./deploy.sh "Your optional commit message"
+
+git submodule add -b master https://github.com/Dejiao2018/Dejiao2018.github.io.git public
