@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Subspace learning and matrix factorization problems have great many applications in science and engineering, and efficient algorithms are critical as dataset sizes continue to grow. Many relevant problem formulations are non-convex, and in a variety of contexts it has been observed that solving the non-convex problem directly is not only efficient but reliably accurate. We discuss convergence theory for a particular method: first order incremental gradient descent constrained to the Grassmannian. The output of the algorithm is an orthonormal basis for a d-dimensional subspace spanned by an input streaming data matrix. We study two sampling cases: where each data vector of the streaming matrix is fully sampled, or where it is undersampled by a sampling matrix. Our results cover two cases, where $A_t$ is Gaussian or a subset of rows of the identity matrix. We propose an adaptive stepsize scheme that depends only on the sampled data and algorithm outputs. We prove that with fully sampled data, the stepsize scheme maximizes the improvement of our convergence metric at each iteration, and this method converges from any random initialization to the true subspace, despite the non-convex formulation and orthogonality constraints. For the case of undersampled data, we establish monotonic expected improvement on the defined convergence metric for each iteration with high probability.">
+  <meta name="description" content="Despite profound successes, contrastive representation learning relies on carefully designed data augmentations using domain specific knowledge. This challenge is magnified in natural language processing where no general rules exist for data augmentation due to the discrete nature of natural language. We tackle this challenge by presenting a Virtual augmentation Supported Contrastive Learning of sentence representations (VaSCL). Originating from the interpretation that data augmentation essentially constructs the neighborhoods of each training instance, we in turn utilize the neighborhood to generate effective data augmentations. Leveraging the large training batch size of contrastive learning, we approximate the neighborhood of an instance via its K-nearest in-batch neighbors in the representation space. We then define an instance discrimination task regarding this neighborhood and generate the virtual augmentation in an adversarial training manner. We access the performance of VaSCL on a wide range of downstream tasks, and set a new state-of-the-art for unsupervised sentence representation learning.    ">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/grouse/">
+  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/vascl/">
 
   
 
@@ -105,7 +105,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://dejiaozhang.com/publication/grouse/">
+  <link rel="canonical" href="https://dejiaozhang.com/publication/vascl/">
 
   
   
@@ -117,21 +117,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Dejiao Zhang">
-  <meta property="og:url" content="https://dejiaozhang.com/publication/grouse/">
-  <meta property="og:title" content="Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation from Undersampled Data | Dejiao Zhang">
-  <meta property="og:description" content="Subspace learning and matrix factorization problems have great many applications in science and engineering, and efficient algorithms are critical as dataset sizes continue to grow. Many relevant problem formulations are non-convex, and in a variety of contexts it has been observed that solving the non-convex problem directly is not only efficient but reliably accurate. We discuss convergence theory for a particular method: first order incremental gradient descent constrained to the Grassmannian. The output of the algorithm is an orthonormal basis for a d-dimensional subspace spanned by an input streaming data matrix. We study two sampling cases: where each data vector of the streaming matrix is fully sampled, or where it is undersampled by a sampling matrix. Our results cover two cases, where $A_t$ is Gaussian or a subset of rows of the identity matrix. We propose an adaptive stepsize scheme that depends only on the sampled data and algorithm outputs. We prove that with fully sampled data, the stepsize scheme maximizes the improvement of our convergence metric at each iteration, and this method converges from any random initialization to the true subspace, despite the non-convex formulation and orthogonality constraints. For the case of undersampled data, we establish monotonic expected improvement on the defined convergence metric for each iteration with high probability."><meta property="og:image" content="https://dejiaozhang.com/img/icon-192.png">
+  <meta property="og:url" content="https://dejiaozhang.com/publication/vascl/">
+  <meta property="og:title" content="Virtual Augmentation Supported Contrastive Learning of Sentence Representations | Dejiao Zhang">
+  <meta property="og:description" content="Despite profound successes, contrastive representation learning relies on carefully designed data augmentations using domain specific knowledge. This challenge is magnified in natural language processing where no general rules exist for data augmentation due to the discrete nature of natural language. We tackle this challenge by presenting a Virtual augmentation Supported Contrastive Learning of sentence representations (VaSCL). Originating from the interpretation that data augmentation essentially constructs the neighborhoods of each training instance, we in turn utilize the neighborhood to generate effective data augmentations. Leveraging the large training batch size of contrastive learning, we approximate the neighborhood of an instance via its K-nearest in-batch neighbors in the representation space. We then define an instance discrimination task regarding this neighborhood and generate the virtual augmentation in an adversarial training manner. We access the performance of VaSCL on a wide range of downstream tasks, and set a new state-of-the-art for unsupervised sentence representation learning.    "><meta property="og:image" content="https://dejiaozhang.com/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-10-09T00:00:00-04:00">
+  <meta property="article:published_time" content="2021-11-15T00:00:00-05:00">
   
-  <meta property="article:modified_time" content="2020-06-27T18:19:18-04:00">
-  
-
+  <meta property="article:modified_time" content="2021-11-15T00:00:00-05:00">
   
 
   
 
-  <title>Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation from Undersampled Data | Dejiao Zhang</title>
+  
+
+  <title>Virtual Augmentation Supported Contrastive Learning of Sentence Representations | Dejiao Zhang</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -311,7 +311,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation from Undersampled Data</h1>
+  <h1 itemprop="name">Virtual Augmentation Supported Contrastive Learning of Sentence Representations</h1>
 
   
 
@@ -320,8 +320,8 @@
 
 
 
-<meta content="2018-10-09 00:00:00 -0400 EDT" itemprop="datePublished">
-<meta content="2020-06-27 18:19:18 -0400 EDT" itemprop="dateModified">
+<meta content="2021-11-15 00:00:00 -0500 EST" itemprop="datePublished">
+<meta content="2021-11-15 00:00:00 -0500 EST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -334,7 +334,7 @@
     
       
     
-    <time>October 2018</time>
+    <time>November 2021</time>
   </span>
   
 
@@ -353,35 +353,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f"
+         href="https://twitter.com/intent/tweet?text=Virtual%20Augmentation%20Supported%20Contrastive%20Learning%20of%20Sentence%20Representations&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fvascl%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fvascl%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f&amp;title=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fvascl%2f&amp;title=Virtual%20Augmentation%20Supported%20Contrastive%20Learning%20of%20Sentence%20Representations"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f&amp;title=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fvascl%2f&amp;title=Virtual%20Augmentation%20Supported%20Contrastive%20Learning%20of%20Sentence%20Representations"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f">
+         href="mailto:?subject=Virtual%20Augmentation%20Supported%20Contrastive%20Learning%20of%20Sentence%20Representations&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fvascl%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -427,20 +427,32 @@
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/1610.00199.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/2110.08552.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/grouse/cite.bib">
+        data-filename="/publication/vascl/cite.bib">
   Cite
 </button>
 
 
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/amazon-research/sentence-representations" target="_blank" rel="noopener">
+  Code
+</a>
 
 
+
+
+  
+    
+  
 
 
 
@@ -464,7 +476,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Subspace learning and matrix factorization problems have great many applications in science and engineering, and efficient algorithms are critical as dataset sizes continue to grow. Many relevant problem formulations are non-convex, and in a variety of contexts it has been observed that solving the non-convex problem directly is not only efficient but reliably accurate. We discuss convergence theory for a particular method: first order incremental gradient descent constrained to the Grassmannian. The output of the algorithm is an orthonormal basis for a d-dimensional subspace spanned by an input streaming data matrix. We study two sampling cases: where each data vector of the streaming matrix is fully sampled, or where it is undersampled by a sampling matrix. Our results cover two cases, where $A_t$ is Gaussian or a subset of rows of the identity matrix. We propose an adaptive stepsize scheme that depends only on the sampled data and algorithm outputs. We prove that with fully sampled data, the stepsize scheme maximizes the improvement of our convergence metric at each iteration, and this method converges from any random initialization to the true subspace, despite the non-convex formulation and orthogonality constraints. For the case of undersampled data, we establish monotonic expected improvement on the defined convergence metric for each iteration with high probability.</p>
+    <p class="pub-abstract" itemprop="text">Despite profound successes, contrastive representation learning relies on carefully designed data augmentations using domain specific knowledge. This challenge is magnified in natural language processing where no general rules exist for data augmentation due to the discrete nature of natural language. We tackle this challenge by presenting a Virtual augmentation Supported Contrastive Learning of sentence representations (VaSCL). Originating from the interpretation that data augmentation essentially constructs the neighborhoods of each training instance, we in turn utilize the neighborhood to generate effective data augmentations. Leveraging the large training batch size of contrastive learning, we approximate the neighborhood of an instance via its K-nearest in-batch neighbors in the representation space. We then define an instance discrimination task regarding this neighborhood and generate the virtual augmentation in an adversarial training manner. We access the performance of VaSCL on a wide range of downstream tasks, and set a new state-of-the-art for unsupervised sentence representation learning.</p>
     
 
     
@@ -496,7 +508,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Arxiv preprint, 2016</div>
+          <div class="col-12 col-md-9">Under review, 2021</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -513,7 +525,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/subspacelearn/">SubspaceLearn</a>
+  <a class="badge badge-light" href="/tags/unsupervised-clustering/">Unsupervised Clustering</a>
   
 </div>
 
@@ -660,6 +672,9 @@
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -677,6 +692,8 @@
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 

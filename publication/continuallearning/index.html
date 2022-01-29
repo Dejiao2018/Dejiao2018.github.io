@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Subspace learning and matrix factorization problems have great many applications in science and engineering, and efficient algorithms are critical as dataset sizes continue to grow. Many relevant problem formulations are non-convex, and in a variety of contexts it has been observed that solving the non-convex problem directly is not only efficient but reliably accurate. We discuss convergence theory for a particular method: first order incremental gradient descent constrained to the Grassmannian. The output of the algorithm is an orthonormal basis for a d-dimensional subspace spanned by an input streaming data matrix. We study two sampling cases: where each data vector of the streaming matrix is fully sampled, or where it is undersampled by a sampling matrix. Our results cover two cases, where $A_t$ is Gaussian or a subset of rows of the identity matrix. We propose an adaptive stepsize scheme that depends only on the sampled data and algorithm outputs. We prove that with fully sampled data, the stepsize scheme maximizes the improvement of our convergence metric at each iteration, and this method converges from any random initialization to the true subspace, despite the non-convex formulation and orthogonality constraints. For the case of undersampled data, we establish monotonic expected improvement on the defined convergence metric for each iteration with high probability.">
+  <meta name="description" content="Pretrained language models (PTLMs) are typically learned over a large, static corpus and further fine-tuned for various downstream tasks. However, when deployed in the real world, a PTLM-based model must deal with data from a new domain that deviates from what the PTLM was initially trained on, or newly emerged data that contains out-of-distribution information. In this paper, we study a lifelong language model pretraining challenge where a PTLM is continually updated so as to adapt to emerging data. Over a domain-incremental research paper stream and chronologically ordered tweet stream, we incrementally pretrain a PTLM with different continual learning algorithms, and keep track of the downstream task performance (after fine-tuning) to analyze its ability of acquiring new knowledge and preserving learned knowledge. Our experiments show continual learning algorithms improve knowledge preservation, with logit distillation being the most effective approach. We further show that continual pretraining improves generalization when training and testing data of downstream tasks are drawn from different time steps, but do not improve when they are from the same time steps. We believe our problem formulation, methods, and analysis will inspire future studies towards continual pretraining of language models.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/grouse/">
+  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/continuallearning/">
 
   
 
@@ -105,7 +105,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://dejiaozhang.com/publication/grouse/">
+  <link rel="canonical" href="https://dejiaozhang.com/publication/continuallearning/">
 
   
   
@@ -117,21 +117,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Dejiao Zhang">
-  <meta property="og:url" content="https://dejiaozhang.com/publication/grouse/">
-  <meta property="og:title" content="Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation from Undersampled Data | Dejiao Zhang">
-  <meta property="og:description" content="Subspace learning and matrix factorization problems have great many applications in science and engineering, and efficient algorithms are critical as dataset sizes continue to grow. Many relevant problem formulations are non-convex, and in a variety of contexts it has been observed that solving the non-convex problem directly is not only efficient but reliably accurate. We discuss convergence theory for a particular method: first order incremental gradient descent constrained to the Grassmannian. The output of the algorithm is an orthonormal basis for a d-dimensional subspace spanned by an input streaming data matrix. We study two sampling cases: where each data vector of the streaming matrix is fully sampled, or where it is undersampled by a sampling matrix. Our results cover two cases, where $A_t$ is Gaussian or a subset of rows of the identity matrix. We propose an adaptive stepsize scheme that depends only on the sampled data and algorithm outputs. We prove that with fully sampled data, the stepsize scheme maximizes the improvement of our convergence metric at each iteration, and this method converges from any random initialization to the true subspace, despite the non-convex formulation and orthogonality constraints. For the case of undersampled data, we establish monotonic expected improvement on the defined convergence metric for each iteration with high probability."><meta property="og:image" content="https://dejiaozhang.com/img/icon-192.png">
+  <meta property="og:url" content="https://dejiaozhang.com/publication/continuallearning/">
+  <meta property="og:title" content="Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora | Dejiao Zhang">
+  <meta property="og:description" content="Pretrained language models (PTLMs) are typically learned over a large, static corpus and further fine-tuned for various downstream tasks. However, when deployed in the real world, a PTLM-based model must deal with data from a new domain that deviates from what the PTLM was initially trained on, or newly emerged data that contains out-of-distribution information. In this paper, we study a lifelong language model pretraining challenge where a PTLM is continually updated so as to adapt to emerging data. Over a domain-incremental research paper stream and chronologically ordered tweet stream, we incrementally pretrain a PTLM with different continual learning algorithms, and keep track of the downstream task performance (after fine-tuning) to analyze its ability of acquiring new knowledge and preserving learned knowledge. Our experiments show continual learning algorithms improve knowledge preservation, with logit distillation being the most effective approach. We further show that continual pretraining improves generalization when training and testing data of downstream tasks are drawn from different time steps, but do not improve when they are from the same time steps. We believe our problem formulation, methods, and analysis will inspire future studies towards continual pretraining of language models."><meta property="og:image" content="https://dejiaozhang.com/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-10-09T00:00:00-04:00">
+  <meta property="article:published_time" content="2021-08-25T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2020-06-27T18:19:18-04:00">
-  
-
+  <meta property="article:modified_time" content="2021-08-25T00:00:00-04:00">
   
 
   
 
-  <title>Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation from Undersampled Data | Dejiao Zhang</title>
+  
+
+  <title>Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora | Dejiao Zhang</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -311,7 +311,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation from Undersampled Data</h1>
+  <h1 itemprop="name">Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora</h1>
 
   
 
@@ -320,8 +320,8 @@
 
 
 
-<meta content="2018-10-09 00:00:00 -0400 EDT" itemprop="datePublished">
-<meta content="2020-06-27 18:19:18 -0400 EDT" itemprop="dateModified">
+<meta content="2021-08-25 00:00:00 -0400 EDT" itemprop="datePublished">
+<meta content="2021-08-25 00:00:00 -0400 EDT" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -334,7 +334,7 @@
     
       
     
-    <time>October 2018</time>
+    <time>August 2021</time>
   </span>
   
 
@@ -353,35 +353,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f"
+         href="https://twitter.com/intent/tweet?text=Lifelong%20Pretraining%3a%20Continually%20Adapting%20Language%20Models%20to%20Emerging%20Corpora&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcontinuallearning%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcontinuallearning%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f&amp;title=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcontinuallearning%2f&amp;title=Lifelong%20Pretraining%3a%20Continually%20Adapting%20Language%20Models%20to%20Emerging%20Corpora"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f&amp;title=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcontinuallearning%2f&amp;title=Lifelong%20Pretraining%3a%20Continually%20Adapting%20Language%20Models%20to%20Emerging%20Corpora"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation%20from%20Undersampled%20Data&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse%2f">
+         href="mailto:?subject=Lifelong%20Pretraining%3a%20Continually%20Adapting%20Language%20Models%20to%20Emerging%20Corpora&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcontinuallearning%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -427,20 +427,24 @@
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/1610.00199.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/2110.08534.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/grouse/cite.bib">
+        data-filename="/publication/continuallearning/cite.bib">
   Cite
 </button>
 
 
 
 
+
+  
+    
+  
 
 
 
@@ -464,7 +468,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Subspace learning and matrix factorization problems have great many applications in science and engineering, and efficient algorithms are critical as dataset sizes continue to grow. Many relevant problem formulations are non-convex, and in a variety of contexts it has been observed that solving the non-convex problem directly is not only efficient but reliably accurate. We discuss convergence theory for a particular method: first order incremental gradient descent constrained to the Grassmannian. The output of the algorithm is an orthonormal basis for a d-dimensional subspace spanned by an input streaming data matrix. We study two sampling cases: where each data vector of the streaming matrix is fully sampled, or where it is undersampled by a sampling matrix. Our results cover two cases, where $A_t$ is Gaussian or a subset of rows of the identity matrix. We propose an adaptive stepsize scheme that depends only on the sampled data and algorithm outputs. We prove that with fully sampled data, the stepsize scheme maximizes the improvement of our convergence metric at each iteration, and this method converges from any random initialization to the true subspace, despite the non-convex formulation and orthogonality constraints. For the case of undersampled data, we establish monotonic expected improvement on the defined convergence metric for each iteration with high probability.</p>
+    <p class="pub-abstract" itemprop="text">Pretrained language models (PTLMs) are typically learned over a large, static corpus and further fine-tuned for various downstream tasks. However, when deployed in the real world, a PTLM-based model must deal with data from a new domain that deviates from what the PTLM was initially trained on, or newly emerged data that contains out-of-distribution information. In this paper, we study a lifelong language model pretraining challenge where a PTLM is continually updated so as to adapt to emerging data. Over a domain-incremental research paper stream and chronologically ordered tweet stream, we incrementally pretrain a PTLM with different continual learning algorithms, and keep track of the downstream task performance (after fine-tuning) to analyze its ability of acquiring new knowledge and preserving learned knowledge. Our experiments show continual learning algorithms improve knowledge preservation, with logit distillation being the most effective approach. We further show that continual pretraining improves generalization when training and testing data of downstream tasks are drawn from different time steps, but do not improve when they are from the same time steps. We believe our problem formulation, methods, and analysis will inspire future studies towards continual pretraining of language models.</p>
     
 
     
@@ -496,7 +500,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Arxiv preprint, 2016</div>
+          <div class="col-12 col-md-9">Under review, 2021</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -513,7 +517,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/subspacelearn/">SubspaceLearn</a>
+  <a class="badge badge-light" href="/tags/unsupervised-clustering/">Unsupervised Clustering</a>
   
 </div>
 
@@ -660,6 +664,9 @@
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -677,6 +684,8 @@
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 
