@@ -7,13 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;</copyright>
-    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning Dialogue Representations from Consecutive Utterances</title>
+      <link>https://dejiaozhang.com/publication/dse/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 -0400</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/dse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora</title>
+      <link>https://dejiaozhang.com/publication/continuallearning/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/continuallearning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Virtual Augmentation Supported Contrastive Learning of Sentence Representations</title>
       <link>https://dejiaozhang.com/publication/vascl/</link>
-      <pubDate>Mon, 15 Nov 2021 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://dejiaozhang.com/publication/vascl/</guid>
       <description></description>
@@ -25,24 +43,6 @@
       <pubDate>Wed, 25 Aug 2021 00:00:00 -0400</pubDate>
       
       <guid>https://dejiaozhang.com/publication/knowledgesurvey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learning Dialogue Representations from Consecutive Utterances</title>
-      <link>https://dejiaozhang.com/publication/dse/</link>
-      <pubDate>Wed, 25 Aug 2021 00:00:00 -0400</pubDate>
-      
-      <guid>https://dejiaozhang.com/publication/dse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lifelong Pretraining: Continually Adapting Language Models to Emerging Corpora</title>
-      <link>https://dejiaozhang.com/publication/continuallearning/</link>
-      <pubDate>Wed, 25 Aug 2021 00:00:00 -0400</pubDate>
-      
-      <guid>https://dejiaozhang.com/publication/continuallearning/</guid>
       <description></description>
     </item>
     
