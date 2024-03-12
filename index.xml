@@ -7,8 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;</copyright>
-    <lastBuildDate>Mon, 01 May 2023 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CodeSage: Code Representation Learning At Scale</title>
+      <link>https://dejiaozhang.com/publication/codesage/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/codesage/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ContraCLM: Contrastive Learning for Causal Language Model</title>
@@ -134,15 +143,6 @@
       <pubDate>Mon, 09 May 2016 00:00:00 -0400</pubDate>
       
       <guid>https://dejiaozhang.com/publication/grouse_aistats/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Iterative Grassmannian Optimization for Robust Image Alignment</title>
-      <link>https://dejiaozhang.com/publication/tgrasta_journal/</link>
-      <pubDate>Sun, 02 Mar 2014 00:00:00 -0500</pubDate>
-      
-      <guid>https://dejiaozhang.com/publication/tgrasta_journal/</guid>
       <description></description>
     </item>
     

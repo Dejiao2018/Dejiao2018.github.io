@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;</copyright>
-    <lastBuildDate>Mon, 01 May 2023 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://dejiaozhang.com/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CodeSage: Code Representation Learning At Scale</title>
+      <link>https://dejiaozhang.com/publication/codesage/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://dejiaozhang.com/publication/codesage/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ContraCLM: Contrastive Learning for Causal Language Model</title>

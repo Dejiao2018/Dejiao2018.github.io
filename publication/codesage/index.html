@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="It has been observed in a variety of contexts that gradient descent methods have great success in solving low-rank matrix factorization problems, despite the relevant problem formulation being non-convex. We tackle a particular instance of this scenario, where we seek the d-dimensional subspace spanned by a streaming data matrix. We apply the natural first order incremental gradient descent method, constraining the gradient method to the Grassmannian. In this paper, we propose an adaptive step size scheme that is greedy for the noiseless case, that maximizes the improvement of our metric of convergence at each data index t, and yields an expected improvement for the noisy case. We show that, with noise-free data, this method converges from any random initialization to the global minimum of the problem. For noisy data, we provide the expected convergence rate of the proposed algorithm per iteration.">
+  <meta name="description" content="Recent studies have shown that code language models at scale demonstrate significant performance gains on downstream tasks, i.e., code generation. However, most of the existing works on code representation learning train models at a hundred million parameter scale using very limited pretraining corpora. In this work, we fuel code representation learning with a vast amount of code data via a two-stage pretraining scheme. We first train the encoders via a mix that leverages both randomness in masking language modeling and the implicit structure aspect of programming language. We then enhance the representations via contrastive learning with hard negative and hard positive constructed in an unsupervised manner. We establish an off-the-shelf encoder model that persistently outperforms the existing models on a wide variety of downstream tasks by large margins. To comprehend the factors contributing to successful code representation learning, we conduct detailed ablations and share our findings on (i) a customized and effective token-level denoising scheme for source code; (ii) the importance of hard negatives and hard positives; (iii) how the proposed bimodal contrastive learning boost the cross-lingual semantic search performance; and (iv) how the pretraining schemes decide the downstream task performance scales with the model size.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/grouse_aistats/">
+  <link rel="alternate" hreflang="en-us" href="https://dejiaozhang.com/publication/codesage/">
 
   
 
@@ -105,7 +105,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://dejiaozhang.com/publication/grouse_aistats/">
+  <link rel="canonical" href="https://dejiaozhang.com/publication/codesage/">
 
   
   
@@ -117,21 +117,21 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Dejiao Zhang">
-  <meta property="og:url" content="https://dejiaozhang.com/publication/grouse_aistats/">
-  <meta property="og:title" content="Global Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation | Dejiao Zhang">
-  <meta property="og:description" content="It has been observed in a variety of contexts that gradient descent methods have great success in solving low-rank matrix factorization problems, despite the relevant problem formulation being non-convex. We tackle a particular instance of this scenario, where we seek the d-dimensional subspace spanned by a streaming data matrix. We apply the natural first order incremental gradient descent method, constraining the gradient method to the Grassmannian. In this paper, we propose an adaptive step size scheme that is greedy for the noiseless case, that maximizes the improvement of our metric of convergence at each data index t, and yields an expected improvement for the noisy case. We show that, with noise-free data, this method converges from any random initialization to the global minimum of the problem. For noisy data, we provide the expected convergence rate of the proposed algorithm per iteration."><meta property="og:image" content="https://dejiaozhang.com/img/icon-192.png">
+  <meta property="og:url" content="https://dejiaozhang.com/publication/codesage/">
+  <meta property="og:title" content="CodeSage: Code Representation Learning At Scale | Dejiao Zhang">
+  <meta property="og:description" content="Recent studies have shown that code language models at scale demonstrate significant performance gains on downstream tasks, i.e., code generation. However, most of the existing works on code representation learning train models at a hundred million parameter scale using very limited pretraining corpora. In this work, we fuel code representation learning with a vast amount of code data via a two-stage pretraining scheme. We first train the encoders via a mix that leverages both randomness in masking language modeling and the implicit structure aspect of programming language. We then enhance the representations via contrastive learning with hard negative and hard positive constructed in an unsupervised manner. We establish an off-the-shelf encoder model that persistently outperforms the existing models on a wide variety of downstream tasks by large margins. To comprehend the factors contributing to successful code representation learning, we conduct detailed ablations and share our findings on (i) a customized and effective token-level denoising scheme for source code; (ii) the importance of hard negatives and hard positives; (iii) how the proposed bimodal contrastive learning boost the cross-lingual semantic search performance; and (iv) how the pretraining schemes decide the downstream task performance scales with the model size."><meta property="og:image" content="https://dejiaozhang.com/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2016-05-09T00:00:00-04:00">
+  <meta property="article:published_time" content="2024-01-01T00:00:00-05:00">
   
-  <meta property="article:modified_time" content="2020-06-27T17:08:30-04:00">
-  
-
+  <meta property="article:modified_time" content="2024-01-01T00:00:00-05:00">
   
 
   
 
-  <title>Global Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation | Dejiao Zhang</title>
+  
+
+  <title>CodeSage: Code Representation Learning At Scale | Dejiao Zhang</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -292,7 +292,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Global Convergence of a Grassmannian Gradient Descent Algorithm for Subspace Estimation</h1>
+  <h1 itemprop="name">CodeSage: Code Representation Learning At Scale</h1>
 
   
 
@@ -301,8 +301,8 @@
 
 
 
-<meta content="2016-05-09 00:00:00 -0400 EDT" itemprop="datePublished">
-<meta content="2020-06-27 17:08:30 -0400 EDT" itemprop="dateModified">
+<meta content="2024-01-01 00:00:00 -0500 EST" itemprop="datePublished">
+<meta content="2024-01-01 00:00:00 -0500 EST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -315,7 +315,7 @@
     
       
     
-    <time>May 2016</time>
+    <time>January 2024</time>
   </span>
   
 
@@ -334,35 +334,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Global%20Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse_aistats%2f"
+         href="https://twitter.com/intent/tweet?text=CodeSage%3a%20Code%20Representation%20Learning%20At%20Scale&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcodesage%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse_aistats%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcodesage%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse_aistats%2f&amp;title=Global%20Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcodesage%2f&amp;title=CodeSage%3a%20Code%20Representation%20Learning%20At%20Scale"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse_aistats%2f&amp;title=Global%20Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcodesage%2f&amp;title=CodeSage%3a%20Code%20Representation%20Learning%20At%20Scale"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Global%20Convergence%20of%20a%20Grassmannian%20Gradient%20Descent%20Algorithm%20for%20Subspace%20Estimation&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fgrouse_aistats%2f">
+         href="mailto:?subject=CodeSage%3a%20Code%20Representation%20Learning%20At%20Scale&amp;body=https%3a%2f%2fdejiaozhang.com%2fpublication%2fcodesage%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -406,29 +406,29 @@
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="http://proceedings.mlr.press/v51/zhang16b-supp.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2402.01935" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 
-
-
-
-  
-    
-  
-
-
-
   
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/grouse_aistats/aistats_poster1.pdf" target="_blank" rel="noopener">
-  Poster
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/amazon-science/CodeSage" target="_blank" rel="noopener">
+  Code
 </a>
+
+
+
+
+  
+    
+  
+
+
 
 
 
@@ -450,7 +450,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">It has been observed in a variety of contexts that gradient descent methods have great success in solving low-rank matrix factorization problems, despite the relevant problem formulation being non-convex. We tackle a particular instance of this scenario, where we seek the d-dimensional subspace spanned by a streaming data matrix. We apply the natural first order incremental gradient descent method, constraining the gradient method to the Grassmannian. In this paper, we propose an adaptive step size scheme that is greedy for the noiseless case, that maximizes the improvement of our metric of convergence at each data index t, and yields an expected improvement for the noisy case. We show that, with noise-free data, this method converges from any random initialization to the global minimum of the problem. For noisy data, we provide the expected convergence rate of the proposed algorithm per iteration.</p>
+    <p class="pub-abstract" itemprop="text">Recent studies have shown that code language models at scale demonstrate significant performance gains on downstream tasks, i.e., code generation. However, most of the existing works on code representation learning train models at a hundred million parameter scale using very limited pretraining corpora. In this work, we fuel code representation learning with a vast amount of code data via a two-stage pretraining scheme. We first train the encoders via a mix that leverages both randomness in masking language modeling and the implicit structure aspect of programming language. We then enhance the representations via contrastive learning with hard negative and hard positive constructed in an unsupervised manner. We establish an off-the-shelf encoder model that persistently outperforms the existing models on a wide variety of downstream tasks by large margins. To comprehend the factors contributing to successful code representation learning, we conduct detailed ablations and share our findings on (i) a customized and effective token-level denoising scheme for source code; (ii) the importance of hard negatives and hard positives; (iii) how the proposed bimodal contrastive learning boost the cross-lingual semantic search performance; and (iv) how the pretraining schemes decide the downstream task performance scales with the model size.</p>
     
 
     
@@ -482,7 +482,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In Proceedings of the 19th International Conference on Artificial Intelligence and Statistics, AISTATS 2016</div>
+          <div class="col-12 col-md-9">International Conference on Learning Representations, ICLR 2024</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -495,15 +495,6 @@
     <div class="article-style"></div>
 
     
-
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tags/subspacelearn/">SubspaceLearn</a>
-  
-</div>
-
-
 
     
 
@@ -646,6 +637,9 @@
 
     
     
+    
+    <script src="/js/mathjax-config.js"></script>
+    
 
     
     
@@ -663,6 +657,8 @@
       
 
       
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
       
     
 
